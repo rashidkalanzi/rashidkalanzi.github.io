@@ -1086,9 +1086,10 @@ margin-bottom:10px;
 }
 
 .card p{
-
 line-height:1.7;
-
 max-width:900px;
+}
 
+.engagement-title{
+margin-top:25px;
 }
