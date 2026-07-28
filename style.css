@@ -1034,6 +1034,14 @@ font-size:16px;
 
 }
 
+.hero-content h1,
+.hero-content h2,
+.hero-content p{
+    text-align:left !important;
+    margin-left:0 !important;
+    padding-left:0 !important;
+}
+
 /* ANCHOR OFFSET FOR FIXED HEADER */
 
 section[id]{
