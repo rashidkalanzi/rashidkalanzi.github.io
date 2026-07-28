@@ -3,11 +3,9 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-
 font-family:"Segoe UI",Arial,sans-serif;
 
 }
-
 
 
 html{
@@ -17,11 +15,9 @@ scroll-behavior:smooth;
 }
 
 
-
 body{
 
 background:#f7f9fc;
-
 color:#333;
 
 }
@@ -30,53 +26,39 @@ color:#333;
 
 /* Navigation */
 
-
 nav{
 
 background:#003366;
-
 padding:18px 8%;
-
 display:flex;
-
 justify-content:space-between;
-
 align-items:center;
 
 }
 
 
-
 .logo{
 
 color:white;
-
 font-size:24px;
-
 font-weight:bold;
 
 }
 
 
-
 nav ul{
 
 display:flex;
-
 gap:25px;
-
 list-style:none;
 
 }
 
 
-
 nav a{
 
 color:white;
-
 text-decoration:none;
-
 font-size:15px;
 
 }
@@ -86,32 +68,32 @@ font-size:15px;
 
 /* Hero */
 
-
 .hero{
 
 background:white;
-
 max-width:1200px;
-
 margin:auto;
 
-padding:70px 8%;
+padding:80px 8%;
 
 display:flex;
 
 align-items:center;
 
-justify-content:space-between;
+justify-content:center;
 
-gap:40px;
+gap:70px;
+
+min-height:520px;
 
 }
-
 
 
 .hero-content{
 
 flex:1;
+
+text-align:left;
 
 }
 
@@ -119,9 +101,13 @@ flex:1;
 
 .hero h1{
 
-font-size:48px;
+font-size:46px;
+
+font-weight:700;
 
 color:#003366;
+
+margin-bottom:12px;
 
 }
 
@@ -129,11 +115,13 @@ color:#003366;
 
 .hero h2{
 
-font-size:25px;
+font-size:24px;
 
 color:#0070C0;
 
-margin:15px 0;
+font-weight:600;
+
+margin-bottom:18px;
 
 }
 
@@ -141,15 +129,22 @@ margin:15px 0;
 
 .hero p{
 
-font-size:17px;
+font-size:16px;
 
-line-height:1.8;
+line-height:1.7;
+
+max-width:600px;
+
+color:#555;
 
 margin-bottom:30px;
 
 }
 
 
+
+
+/* Buttons */
 
 
 .hero-buttons{
@@ -163,16 +158,17 @@ gap:12px;
 }
 
 
-
 .hero-buttons a{
 
-display:flex;
+display:inline-flex;
 
 align-items:center;
 
 justify-content:center;
 
 height:45px;
+
+min-width:140px;
 
 padding:0 25px;
 
@@ -186,8 +182,9 @@ text-decoration:none;
 
 font-weight:bold;
 
-}
+transition:.3s;
 
+}
 
 
 .hero-buttons a:hover{
@@ -199,7 +196,21 @@ background:#0070C0;
 
 
 
-/* Photo */
+/* Profile Photo */
+
+
+.profile{
+
+flex:0 0 260px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+}
+
 
 
 .profile img{
@@ -212,7 +223,9 @@ border-radius:50%;
 
 object-fit:cover;
 
-border:5px solid #003366;
+border:none;
+
+box-shadow:0 8px 20px rgba(0,0,0,.15);
 
 }
 
@@ -228,7 +241,6 @@ section{
 padding:60px 8%;
 
 }
-
 
 
 section h2{
@@ -261,7 +273,6 @@ box-shadow:0 5px 20px rgba(0,0,0,.08);
 }
 
 
-
 .card h3{
 
 color:#0070C0;
@@ -269,7 +280,6 @@ color:#0070C0;
 margin-bottom:10px;
 
 }
-
 
 
 
@@ -286,7 +296,6 @@ grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
 gap:20px;
 
 }
-
 
 
 .skill{
@@ -325,9 +334,7 @@ padding:25px;
 
 
 
-
 /* Mobile */
-
 
 @media(max-width:768px){
 
@@ -357,7 +364,17 @@ flex-direction:column-reverse;
 
 text-align:center;
 
-padding:40px 20px;
+padding:50px 20px;
+
+gap:35px;
+
+}
+
+
+
+.hero-content{
+
+text-align:center;
 
 }
 
@@ -396,7 +413,6 @@ width:200px;
 height:200px;
 
 }
-
 
 
 }
