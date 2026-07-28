@@ -1034,9 +1034,8 @@ font-size:16px;
 
 }
 
-/* FIX MENU ANCHOR SCROLL POSITION */
+/* ANCHOR OFFSET FOR FIXED HEADER */
 
-section{
-    scroll-margin-top:130px;
+section[id]{
+    scroll-margin-top:140px;
 }
-
