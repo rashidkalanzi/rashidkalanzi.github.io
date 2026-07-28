@@ -104,3 +104,39 @@ section {
 }
 
 }
+
+.profile-photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    margin-bottom: 20px;
+}
+
+
+.buttons {
+    margin-top: 25px;
+}
+
+
+.buttons a {
+
+    display: inline-block;
+    background: white;
+    color: #003366;
+    padding: 12px 25px;
+    margin: 5px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+
+.buttons a:hover {
+
+    background: #00aaff;
+    color: white;
+
+}
