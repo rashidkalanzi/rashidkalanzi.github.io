@@ -1,180 +1,409 @@
+/* ==========================
+   General Settings
+========================== */
+
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI", Arial, sans-serif;
 }
 
 html{
-scroll-behavior:smooth;
+    scroll-behavior:smooth;
 }
 
 body{
-background:#f4f7fb;
-color:#333;
+    background:#f5f7fb;
+    color:#333;
 }
+
+
+/* ==========================
+   Navigation
+========================== */
 
 nav{
-background:#003366;
-padding:18px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-position:sticky;
-top:0;
-z-index:1000;
+
+    background:#003366;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+
 }
+
 
 .logo{
-color:white;
-font-size:26px;
-font-weight:700;
+
+    color:white;
+    font-size:26px;
+    font-weight:700;
+
 }
+
 
 nav ul{
-display:flex;
-list-style:none;
-gap:25px;
+
+    display:flex;
+    list-style:none;
+    gap:30px;
+
 }
 
-nav a{
-color:white;
-text-decoration:none;
-font-weight:500;
+
+nav ul li a{
+
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+
 }
+
+
+nav ul li a:hover{
+
+    color:#00aaff;
+
+}
+
+
+
+/* ==========================
+   Hero Section
+========================== */
+
 
 .hero{
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:80px 8%;
-background:linear-gradient(135deg,#003366,#0070C0);
-color:white;
+
+    min-height:90vh;
+    background:linear-gradient(
+        135deg,
+        #003366,
+        #0070C0
+    );
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:80px 8%;
+    color:white;
+
 }
 
-.hero-text{
-max-width:600px;
+
+.hero-content{
+
+    max-width:650px;
+
 }
+
 
 .hero h1{
-font-size:58px;
-margin-bottom:15px;
+
+    font-size:60px;
+    margin-bottom:15px;
+
 }
+
 
 .hero h2{
-font-size:28px;
-margin-bottom:20px;
-font-weight:400;
+
+    font-size:30px;
+    font-weight:400;
+    margin-bottom:20px;
+
 }
+
 
 .hero p{
-font-size:18px;
-line-height:1.8;
-margin-bottom:30px;
+
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:35px;
+
 }
 
-.hero-image img{
-width:230px;
-height:230px;
-border-radius:50%;
-object-fit:cover;
-border:5px solid white;
-box-shadow:0 8px 25px rgba(0,0,0,.3);
+
+
+/* Buttons */
+
+.hero-buttons{
+
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+
 }
 
-.buttons a{
-display:inline-block;
-margin-right:12px;
-margin-top:10px;
-padding:12px 22px;
-background:white;
-color:#003366;
-border-radius:30px;
-text-decoration:none;
-font-weight:600;
-transition:.3s;
+
+.hero-buttons a{
+
+    padding:13px 28px;
+
+    border-radius:30px;
+
+    background:white;
+
+    color:#003366;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
 }
 
-.buttons a:hover{
-background:#003366;
-color:white;
+
+.hero-buttons a:hover{
+
+    background:#001f3f;
+
+    color:white;
+
 }
+
+
+
+/* ==========================
+   Profile Photo
+========================== */
+
+
+.profile{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+
+.profile img{
+
+    width:260px;
+    height:260px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    object-position:center;
+
+    border:6px solid white;
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.3);
+
+}
+
+
+
+/* ==========================
+   Sections
+========================== */
+
 
 section{
-padding:70px 8%;
+
+    padding:70px 8%;
+
 }
 
-h2{
-margin-bottom:25px;
-color:#003366;
-font-size:34px;
+
+section h2{
+
+    text-align:center;
+
+    color:#003366;
+
+    font-size:36px;
+
+    margin-bottom:35px;
+
 }
+
+
+
+/* ==========================
+   Cards
+========================== */
+
 
 .card{
-background:white;
-padding:25px;
-margin-bottom:20px;
-border-radius:12px;
-box-shadow:0 5px 18px rgba(0,0,0,.08);
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    margin-bottom:20px;
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,.08);
+
 }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-gap:18px;
+
+.card h3{
+
+    color:#0070C0;
+
+    margin-bottom:10px;
+
 }
+
+
+
+/* ==========================
+   Skills
+========================== */
+
+
+.skills-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(180px,1fr));
+
+    gap:20px;
+
+}
+
 
 .skill{
-background:#0070C0;
-color:white;
-padding:18px;
-border-radius:10px;
-text-align:center;
-font-weight:600;
+
+    background:#0070C0;
+
+    color:white;
+
+    padding:20px;
+
+    text-align:center;
+
+    border-radius:12px;
+
+    font-weight:600;
+
 }
 
-footer{
-background:#003366;
-color:white;
-padding:30px;
-text-align:center;
-margin-top:40px;
+
+
+/* ==========================
+   Contact
+========================== */
+
+
+#contact{
+
+    text-align:center;
+
 }
+
+
+#contact a{
+
+    color:#0070C0;
+
+    text-decoration:none;
+
+}
+
+
+
+/* ==========================
+   Footer
+========================== */
+
+
+footer{
+
+    background:#003366;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+}
+
+
+
+/* ==========================
+   Mobile
+========================== */
+
 
 @media(max-width:900px){
 
+
 nav{
-flex-direction:column;
-gap:15px;
+
+    flex-direction:column;
+
+    gap:15px;
+
 }
+
 
 nav ul{
-flex-wrap:wrap;
-justify-content:center;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
 }
+
+
 
 .hero{
-flex-direction:column-reverse;
-text-align:center;
+
+    flex-direction:column-reverse;
+
+    text-align:center;
+
+    gap:40px;
+
 }
+
 
 .hero h1{
-font-size:40px;
+
+    font-size:42px;
+
 }
 
-.hero-image{
-margin-bottom:30px;
+
+.hero h2{
+
+    font-size:24px;
+
 }
 
-.hero-image img{
-width:190px;
-height:190px;
+
+.hero-buttons{
+
+    justify-content:center;
+
 }
 
-.buttons a{
-display:block;
-margin:10px auto;
-max-width:220px;
+
+.profile img{
+
+    width:210px;
+
+    height:210px;
+
 }
+
 
 }
