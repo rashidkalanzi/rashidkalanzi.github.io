@@ -1060,17 +1060,20 @@ margin:25px 0;
 
 
 .engagement-photo img{
-
 width:55%;
-
 max-width:720px;
-
 height:auto;
-
 border-radius:10px;
-
 box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
 
+.image-caption {
+    text-align:center;
+    font-size:14px;
+    font-weight:600;
+    color:#444;
+    margin-top:10px;
+    line-height:1.5;
 }
 
 .card h4{
