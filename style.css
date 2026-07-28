@@ -1,365 +1,351 @@
-/* ==========================
-   General Settings
-========================== */
-
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:"Segoe UI", Arial, sans-serif;
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+
+font-family:"Segoe UI",Arial,sans-serif;
+
 }
+
+
 
 html{
-    scroll-behavior:smooth;
+
+scroll-behavior:smooth;
+
 }
+
+
 
 body{
-    background:#f5f7fb;
-    color:#333;
+
+background:#f7f9fc;
+
+color:#333;
+
 }
 
 
-/* ==========================
-   Navigation
-========================== */
+
+/* Navigation */
+
 
 nav{
 
-    background:#003366;
-    padding:18px 8%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    position:sticky;
-    top:0;
-    z-index:1000;
+background:#003366;
+
+padding:18px 8%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
 
 }
+
 
 
 .logo{
 
-    color:white;
-    font-size:26px;
-    font-weight:700;
+color:white;
+
+font-size:24px;
+
+font-weight:bold;
 
 }
+
 
 
 nav ul{
 
-    display:flex;
-    list-style:none;
-    gap:30px;
+display:flex;
 
-}
+gap:25px;
 
-
-nav ul li a{
-
-    color:white;
-    text-decoration:none;
-    font-weight:500;
-    transition:.3s;
-
-}
-
-
-nav ul li a:hover{
-
-    color:#00aaff;
+list-style:none;
 
 }
 
 
 
-/* ==========================
-   Hero Section
-========================== */
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+font-size:15px;
+
+}
+
+
+
+
+/* Hero */
 
 
 .hero{
 
-    min-height:90vh;
-    background:linear-gradient(
-        135deg,
-        #003366,
-        #0070C0
-    );
+background:white;
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+max-width:1200px;
 
-    padding:80px 8%;
-    color:white;
+margin:auto;
+
+padding:70px 8%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+gap:40px;
 
 }
+
 
 
 .hero-content{
 
-    max-width:650px;
+flex:1;
 
 }
+
 
 
 .hero h1{
 
-    font-size:60px;
-    margin-bottom:15px;
+font-size:48px;
+
+color:#003366;
 
 }
+
 
 
 .hero h2{
 
-    font-size:30px;
-    font-weight:400;
-    margin-bottom:20px;
+font-size:25px;
+
+color:#0070C0;
+
+margin:15px 0;
 
 }
+
 
 
 .hero p{
 
-    font-size:18px;
-    line-height:1.8;
-    margin-bottom:35px;
+font-size:17px;
+
+line-height:1.8;
+
+margin-bottom:30px;
 
 }
 
 
 
-/* Buttons */
 
 .hero-buttons{
 
-    display:flex;
-    gap:15px;
-    flex-wrap:wrap;
+display:flex;
+
+flex-wrap:wrap;
+
+gap:12px;
 
 }
+
 
 
 .hero-buttons a{
 
-    padding:13px 28px;
+display:flex;
 
-    border-radius:30px;
+align-items:center;
 
-    background:white;
+justify-content:center;
 
-    color:#003366;
+height:45px;
 
-    text-decoration:none;
+padding:0 25px;
 
-    font-weight:600;
+background:#003366;
 
-    transition:.3s;
+color:white;
+
+border-radius:25px;
+
+text-decoration:none;
+
+font-weight:bold;
 
 }
+
 
 
 .hero-buttons a:hover{
 
-    background:#001f3f;
-
-    color:white;
+background:#0070C0;
 
 }
 
 
 
-/* ==========================
-   Profile Photo
-========================== */
 
-
-.profile{
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-}
+/* Photo */
 
 
 .profile img{
 
-    width:260px;
-    height:260px;
+width:240px;
 
-    border-radius:50%;
+height:240px;
 
-    object-fit:cover;
+border-radius:50%;
 
-    object-position:center;
+object-fit:cover;
 
-    border:6px solid white;
-
-    box-shadow:
-    0 15px 35px rgba(0,0,0,.3);
+border:5px solid #003366;
 
 }
 
 
 
-/* ==========================
-   Sections
-========================== */
+
+
+/* Sections */
 
 
 section{
 
-    padding:70px 8%;
+padding:60px 8%;
 
 }
+
 
 
 section h2{
 
-    text-align:center;
+text-align:center;
 
-    color:#003366;
+color:#003366;
 
-    font-size:36px;
+font-size:32px;
 
-    margin-bottom:35px;
+margin-bottom:30px;
 
 }
 
 
-
-/* ==========================
-   Cards
-========================== */
 
 
 .card{
 
-    background:white;
+background:white;
 
-    padding:25px;
+padding:25px;
 
-    border-radius:15px;
+margin-bottom:20px;
 
-    margin-bottom:20px;
+border-radius:12px;
 
-    box-shadow:
-    0 8px 25px rgba(0,0,0,.08);
+box-shadow:0 5px 20px rgba(0,0,0,.08);
 
 }
+
 
 
 .card h3{
 
-    color:#0070C0;
+color:#0070C0;
 
-    margin-bottom:10px;
+margin-bottom:10px;
 
 }
 
 
 
-/* ==========================
-   Skills
-========================== */
+
+
+/* Skills */
 
 
 .skills-grid{
 
-    display:grid;
+display:grid;
 
-    grid-template-columns:
-    repeat(auto-fit,minmax(180px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
 
-    gap:20px;
+gap:20px;
 
 }
+
 
 
 .skill{
 
-    background:#0070C0;
+background:#003366;
 
-    color:white;
+color:white;
 
-    padding:20px;
+padding:20px;
 
-    text-align:center;
+text-align:center;
 
-    border-radius:12px;
-
-    font-weight:600;
+border-radius:10px;
 
 }
 
 
 
-/* ==========================
-   Contact
-========================== */
 
 
-#contact{
-
-    text-align:center;
-
-}
-
-
-#contact a{
-
-    color:#0070C0;
-
-    text-decoration:none;
-
-}
-
-
-
-/* ==========================
-   Footer
-========================== */
+/* Footer */
 
 
 footer{
 
-    background:#003366;
+background:#003366;
 
-    color:white;
+color:white;
 
-    text-align:center;
+text-align:center;
 
-    padding:25px;
+padding:25px;
 
 }
 
 
 
-/* ==========================
-   Mobile
-========================== */
 
 
-@media(max-width:900px){
+/* Mobile */
+
+
+@media(max-width:768px){
 
 
 nav{
 
-    flex-direction:column;
+flex-direction:column;
 
-    gap:15px;
+gap:15px;
 
 }
 
 
 nav ul{
 
-    flex-wrap:wrap;
+flex-wrap:wrap;
 
-    justify-content:center;
+justify-content:center;
 
 }
 
@@ -367,43 +353,50 @@ nav ul{
 
 .hero{
 
-    flex-direction:column-reverse;
+flex-direction:column-reverse;
 
-    text-align:center;
+text-align:center;
 
-    gap:40px;
+padding:40px 20px;
 
 }
+
 
 
 .hero h1{
 
-    font-size:42px;
+font-size:36px;
 
 }
 
-
-.hero h2{
-
-    font-size:24px;
-
-}
 
 
 .hero-buttons{
 
-    justify-content:center;
+justify-content:center;
 
 }
+
+
+
+.hero-buttons a{
+
+width:100%;
+
+max-width:280px;
+
+}
+
 
 
 .profile img{
 
-    width:210px;
+width:200px;
 
-    height:210px;
+height:200px;
 
 }
+
 
 
 }
