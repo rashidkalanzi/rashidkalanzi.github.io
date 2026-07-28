@@ -792,7 +792,7 @@ font-size:22px;
 
 flex-direction:column-reverse;
 
-text-align:center;
+text-align:left;
 
 padding:50px 20px;
 
